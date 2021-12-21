@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".register">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="232dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="173dp"
+        android:text="Blood Donation"
+        android:textColor="#121111"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/username_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="Name"
+        android:textColorHint="#E13737"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/bloodgroup_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Blood Group"
+        app:layout_constraintStart_toStartOf="@+id/username_"
+        app:layout_constraintTop_toBottomOf="@+id/username_" />
+
+    <EditText
+        android:id="@+id/contact_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Contact"
+        app:layout_constraintStart_toStartOf="@+id/bloodgroup_"
+        app:layout_constraintTop_toBottomOf="@+id/bloodgroup_" />
+
+    <EditText
+        android:id="@+id/availibilty_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Availibility"
+        app:layout_constraintStart_toStartOf="@+id/contact_"
+        app:layout_constraintTop_toBottomOf="@+id/contact_" />
+
+    <EditText
+        android:id="@+id/location_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Location"
+        app:layout_constraintStart_toStartOf="@+id/availibilty_"
+        app:layout_constraintTop_toBottomOf="@+id/availibilty_" />
+
+    <Button
+        android:id="@+id/registerbtn_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#F44646"
+        android:text="Register"
+        app:layout_constraintStart_toStartOf="@+id/location_"
+        app:layout_constraintTop_toBottomOf="@+id/location_" />
+</androidx.constraintlayout.widget.ConstraintLayout>

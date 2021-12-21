@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/parentlayout">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
+
+
+        <TextView
+            android:id="@+id/bgroup"
+            android:layout_width="48dp"
+            android:layout_height="105dp"
+            android:background="#FF0000"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
+            android:text="bloodgroup"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/teal_700"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/personName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:drawableLeft="@drawable/ic_baseline_contacts_24"
+                android:drawablePadding="5dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/availibilty"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/call"
+                android:drawablePadding="5dp"
+                android:text="Available" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/send"
+                android:drawablePadding="5dp"
+                android:text="contact" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/loc"
+                android:drawablePadding="5dp"
+
+                android:text="LAHORE" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/callbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="callclickEvent"
+            app:icon="@drawable/call" />
+
+        <Button
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickEvent"
+            app:icon="@drawable/send" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
